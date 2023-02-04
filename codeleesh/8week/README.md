@@ -100,6 +100,16 @@ public interface MemberRepository extends Repository<Member, MemberId> {
     Optional<Member> findByIdForUpdate(@Param("id") MemberId memberId);
 ```
 
+#### 예방할 수 있는 방법
+
+- 상호배제
+
+- 점유와 대기
+
+- 비선점
+
+- 원형 대기
+
 #### DBMS에 따른 힌트
 
 - 조사 필요
